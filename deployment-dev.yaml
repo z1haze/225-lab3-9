@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: 39-deployment
+  name: flask-deployment
   labels:
     app: flask
 spec:
@@ -27,7 +27,7 @@ metadata:
   name: flask-service
 spec:
   type: LoadBalancer 
-  loadBalancerIP: 10.48.10.124                                     
+  loadBalancerIP: 10.48.10.116                                    
   ports:
   - protocol: TCP
     port: 5000
