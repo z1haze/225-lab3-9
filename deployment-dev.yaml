@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: flask
-          image: cithit/roseaw:latest   #<-----change this!!!!
+          image: cithit/hendris3:latest   #<-----change this!!!!
           ports:
             - containerPort: 5000
 
@@ -27,7 +27,7 @@ metadata:
   name: flask-service
 spec:
   type: LoadBalancer 
-  loadBalancerIP: 10.48.10.116                                  
+  loadBalancerIP: 10.48.10.214                                  
   ports:
   - protocol: TCP
     port: 5000
